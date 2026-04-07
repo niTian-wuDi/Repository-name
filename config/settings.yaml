@@ -1,0 +1,25 @@
+# 天气小程序配置文件
+# 此文件为只读配置，程序运行期间不会修改
+
+# 天气API配置
+weather:
+  # 目标城市名称（中文或英文）
+  city: "北京"
+  # OpenWeatherMap API密钥（可选，留空则使用模拟数据）
+  # 申请地址: https://openweathermap.org/api
+  api_key: ""
+
+# 定时任务配置
+schedule:
+  interval:
+    # 定时间隔数值
+    value: 5
+    # 定时间隔单位: minutes(分钟) 或 hours(小时)
+    unit: "minutes"
+
+# 输出配置
+output:
+  # 是否启用文件输出
+  enabled: true
+  # 输出文件格式（目前仅支持txt）
+  format: "txt"
